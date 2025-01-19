@@ -1,0 +1,42 @@
+﻿@model IEnumerable<VKR_Visik.Classes.Sections>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.sections_Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.sections_Data)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.sections_Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.sections_Data)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.sections_Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.sections_Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.sections_Id">Delete</a>
+                <a asp-action="Index" asp-controller="Themes" asp-route-id="@item.sections_Id">Перейти к обсуждению</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

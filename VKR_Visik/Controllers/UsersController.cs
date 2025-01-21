@@ -178,7 +178,8 @@ namespace VKR_Visik.Controllers
 
         public async Task<IActionResult> ViewList()
         {
-            return View(await _context.Users.ToListAsync());
+            var res = _context.Users.Where(m => m.Users_AccountActive == 0);
+            return View(await res.ToListAsync());
         }
 
         // POST: Users/ViewList/4

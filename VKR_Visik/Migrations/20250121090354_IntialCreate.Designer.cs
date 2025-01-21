@@ -12,8 +12,8 @@ using VKR_Visik;
 namespace VKR_Visik.Migrations
 {
     [DbContext(typeof(ApplicationDdContext))]
-    [Migration("20250120163957_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20250121090354_IntialCreate")]
+    partial class IntialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -32,6 +32,9 @@ namespace VKR_Visik.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MH_id"));
+
+                    b.Property<string>("MH_TheMessage")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("MH_answer")
                         .HasColumnType("int");

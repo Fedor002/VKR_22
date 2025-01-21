@@ -1,4 +1,5 @@
 ﻿using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -20,9 +21,16 @@ namespace VKR_Visik.Controllers
         public async Task<IActionResult> Index(int? id)
         {
             var applicationDdContext = _context.Themes.Include(t => t.Sections).Where(t => t.sectionsId ==  id);
-            return View(await applicationDdContext.ToListAsync());
+            return View(await applicationDdContext.OrderByDescending(b => b.themes_data).ToListAsync());
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Index(int id_th)
+        {
+            HttpContext.Session.SetInt32("userTheme", id_th);
+            return RedirectToAction("Index", "MessageHistories");
+        }
         // GET: Themes/Details/5
         public async Task<IActionResult> Details(int? id)
         {

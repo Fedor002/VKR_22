@@ -22,7 +22,7 @@ namespace VKR_Visik.Controllers
         // GET: Sections
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Sections.ToListAsync());
+            return View(await _context.Sections.OrderByDescending(b => b.sections_Data).ToListAsync());
         }
 
         // GET: Sections/Details/5

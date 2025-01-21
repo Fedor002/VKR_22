@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VKR_Visik")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a1c15fb79a344b09751243e16e2001c1aaab2a2f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+975997c67e0c2bbc77a210017d7584454707520b")]
 [assembly: System.Reflection.AssemblyProductAttribute("VKR_Visik")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VKR_Visik")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

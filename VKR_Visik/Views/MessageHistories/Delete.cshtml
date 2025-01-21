@@ -12,31 +12,31 @@
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Users)
+            Кто
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Users.users_Password)
+            @Html.DisplayFor(model => model.Users.users_FIO)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Themes)
+            Тема
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Themes.themes_id)
+            @Html.DisplayFor(model => model.Themes.themes_name)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.MH_placemant)
+            Номер сообшения
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.MH_placemant)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.MH_answer)
+            Сообщение
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.MH_answer)
+            @Html.DisplayFor(model => model.MH_TheMessage)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.MH_data)
+            Дата
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.MH_data)
@@ -44,7 +44,7 @@
     </dl>
     
     <form asp-action="Delete">
-        <input type="hidden" asp-for="MH_id" />
+        <input type="hidden" asp-for="MH_placemant" />
         <input type="submit" value="Delete" class="btn btn-danger" /> |
         <a asp-action="Index">Back to List</a>
     </form>

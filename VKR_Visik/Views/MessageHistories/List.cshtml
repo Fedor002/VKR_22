@@ -1,0 +1,65 @@
+﻿@model IEnumerable<VKR_Visik.Classes.MessageHistory>
+
+@{
+    ViewData["Title"] = "List";
+}
+
+<h1>List</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Users)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Themes)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MH_placemant)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MH_answer)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MH_data)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MH_TheMessage)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Users.users_Password)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Themes.themes_id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MH_placemant)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MH_answer)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MH_data)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MH_TheMessage)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.MH_id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.MH_id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.MH_id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

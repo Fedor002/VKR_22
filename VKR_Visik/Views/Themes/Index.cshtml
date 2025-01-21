@@ -4,44 +4,39 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Темы</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Создать тему</a>
 </p>
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.themes_name)
+                Тема
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.themes_data)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Sections)
+                Дата создания
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.themes_name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.themes_data)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Sections.sections_Id)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.themes_id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.themes_id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.themes_id">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.themes_name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.themes_data)
+                </td>
+                <td>
+                    <form method="post" asp-action="Index" asp-controller="Themes" asp-route-id_th="@item.themes_id">
+                        <button type="submit" class="btn btn-link">Перейти к обсуждению</button>
+                    </form>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

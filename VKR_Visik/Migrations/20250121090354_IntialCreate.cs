@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace VKR_Visik.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCreate : Migration
+    public partial class IntialCreate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -71,7 +71,8 @@ namespace VKR_Visik.Migrations
                     MH_theme = table.Column<int>(type: "int", nullable: true),
                     MH_placemant = table.Column<int>(type: "int", nullable: true),
                     MH_answer = table.Column<int>(type: "int", nullable: true),
-                    MH_data = table.Column<DateTime>(type: "datetime2", nullable: true)
+                    MH_data = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    MH_TheMessage = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {

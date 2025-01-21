@@ -30,6 +30,9 @@ namespace VKR_Visik.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MH_id"));
 
+                    b.Property<string>("MH_TheMessage")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int?>("MH_answer")
                         .HasColumnType("int");
 

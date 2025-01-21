@@ -4,7 +4,7 @@
     ViewData["Title"] = "View";
 }
 
-<h1>View</h1>
+<h1>Заявки</h1>
 
 <p>
     <a asp-action="Create">Create New</a>
@@ -13,11 +13,9 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.users_FIO)
+                ФИО
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.users_Password)
-            </th>
+
             <th></th>
         </tr>
     </thead>
@@ -26,9 +24,6 @@
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.users_FIO)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.users_Password)
             </td>
             <td>
                     <form method="post" asp-action="ViewList" asp-route-id="@item.users_Id">

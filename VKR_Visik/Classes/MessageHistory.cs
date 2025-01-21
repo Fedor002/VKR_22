@@ -17,5 +17,6 @@ namespace VKR_Visik.Classes
         public int? MH_placemant { get; set; }
         public int? MH_answer { get; set; }
         public DateTime? MH_data { get; set; }
+        public string? MH_TheMessage { get; set; }
     }
 }

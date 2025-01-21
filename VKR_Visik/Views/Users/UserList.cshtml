@@ -1,0 +1,42 @@
+﻿@model IEnumerable<VKR_Visik.Classes.Users>
+
+@{
+    ViewData["Title"] = "UserList";
+}
+
+<h1>Повышение/Понижение</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.users_FIO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.users_Role)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.users_FIO)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.users_Role)
+                </td>
+                <td>
+                    <form method="post" asp-action="Upp" asp-route-id="@item.users_Id">
+                        <button type="submit" class="btn btn-primary">Повысить</button>
+                    </form>
+                    <form method="post" asp-action="Down" asp-route-id="@item.users_Id">
+                        <button type="submit" class="btn btn-danger">Понизить</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

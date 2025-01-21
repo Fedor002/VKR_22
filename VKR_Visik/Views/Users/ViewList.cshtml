@@ -6,16 +6,12 @@
 
 <h1>Заявки</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
 <table class="table">
     <thead>
         <tr>
             <th>
                 ФИО
             </th>
-
             <th></th>
         </tr>
     </thead>
@@ -27,7 +23,7 @@
             </td>
             <td>
                     <form method="post" asp-action="ViewList" asp-route-id="@item.users_Id">
-                        <button type="submit">Выдать доступ</button>
+                        <a type="submit">Выдать доступ</a>
                     </form>
             </td>
         </tr>

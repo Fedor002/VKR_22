@@ -182,6 +182,88 @@ namespace VKR_Visik.Controllers
             return View(await res.ToListAsync());
         }
 
+        public async Task<IActionResult> UserList()
+        {
+            var res = _context.Users.Where(m => m.Users_AccountActive == 1);
+            return View(await res.ToListAsync());
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Upp(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var res = await _context.Users.FirstOrDefaultAsync(m => m.users_Id == id);
+
+            if (res == null)
+            {
+                return NotFound();
+            }
+
+            res.users_Role = "Менеджер";
+            res.Users_AccountActive = 1;
+
+            try
+            {
+                _context.Update(res);
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!UsersExists(res.users_Id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+            return RedirectToAction("Index", "Sections");
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Down(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var res = await _context.Users.FirstOrDefaultAsync(m => m.users_Id == id);
+
+            if (res == null)
+            {
+                return NotFound();
+            }
+
+            res.users_Role = "Пользователь";
+            res.Users_AccountActive = 1;
+
+            try
+            {
+                _context.Update(res);
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!UsersExists(res.users_Id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+            return RedirectToAction("Index", "Sections");
+        }
+
         // POST: Users/ViewList/4
         [HttpPost, ActionName("ViewList")]
         [ValidateAntiForgeryToken]

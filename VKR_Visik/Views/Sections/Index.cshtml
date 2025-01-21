@@ -5,10 +5,12 @@
 }
 
 <h1>Секции</h1>
-
-<p>
+@if (ViewContext.HttpContext.Session.GetString("userRole") != null)
+{
+    <p>
     <a asp-action="Create">Создать секцию</a>
 </p>
+}
 <table class="table">
     <thead>
         <tr>
@@ -31,9 +33,12 @@
                 @Html.DisplayFor(modelItem => item.sections_Data)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.sections_Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.sections_Id">Details</a> |
+                    @if (ViewContext.HttpContext.Session.GetString("userRole") != null && ViewContext.HttpContext.Session.GetString("userRole") != "Пользователь")
+                    {
+                <a asp-action="Edit" asp-route-id="@item.sections_Id">Edit|</a> 
+                <a asp-action="Details" asp-route-id="@item.sections_Id">Details|</a> 
                 <a asp-action="Delete" asp-route-id="@item.sections_Id">Delete</a>
+                    }
                 <a asp-action="Index" asp-controller="Themes" asp-route-id="@item.sections_Id">Перейти к обсуждению</a>
             </td>
         </tr>

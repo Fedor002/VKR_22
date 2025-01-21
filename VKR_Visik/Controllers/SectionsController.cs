@@ -58,6 +58,7 @@ namespace VKR_Visik.Controllers
         {
             if (ModelState.IsValid)
             {
+                sections.sections_Data = DateTime.Now;
                 _context.Add(sections);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));

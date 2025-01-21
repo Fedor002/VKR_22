@@ -4,39 +4,39 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<h1>Форма создания</h1>
 
-<h4>Themes</h4>
+<h4>Темы</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="themes_name" class="control-label"></label>
+                <label asp-for="themes_name" class="control-label">Имя темы</label>
                 <input asp-for="themes_name" class="form-control" />
                 <span asp-validation-for="themes_name" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="themes_data" class="control-label"></label>
-                <input asp-for="themes_data" class="form-control" />
-                <span asp-validation-for="themes_data" class="text-danger"></span>
+                <div class="form-group">
+                    <label asp-for="sectionsId" class="control-label">К какой секции относится, укажите номер</label>
+                    <input asp-for="sectionsId" class="form-control" />
+                    <span asp-validation-for="sectionsId" class="text-danger"></span>
+                </div>
             </div>
             <div class="form-group">
-                <label asp-for="sectionsId" class="control-label"></label>
-                <select asp-for="sectionsId" class ="form-control" asp-items="ViewBag.sectionsId"></select>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Создать" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Вернуться к списку</a>
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

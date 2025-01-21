@@ -5,11 +5,12 @@
 }
 
 <h1>@ViewBag.ThemeName</h1>
-
-<p>
-    <a asp-action="Create">Добавить сообщение</a>
-</p>
-
+@if (ViewContext.HttpContext.Session.GetString("userRole") != null)
+{
+    <p>
+        <a asp-action="Create">Добавить сообщение</a>
+    </p>
+}
 <div class="message-tree">
     @foreach (var group in Model)
     {
@@ -23,8 +24,14 @@
                 @group.ParentMessage.MH_TheMessage
             </div>
             <div class="message-actions">
-                <a asp-action="Create" asp-route-id="@group.ParentMessage.MH_placemant">Ответить</a> |
-                <a asp-action="Delete" asp-route-id="@group.ParentMessage.MH_placemant">Delete</a>
+                @if (ViewContext.HttpContext.Session.GetString("userRole") != null)
+                {
+                    <a asp-action="Create" asp-route-id="@group.ParentMessage.MH_placemant">Ответить|</a>
+                    @if (ViewContext.HttpContext.Session.GetString("userRole") != "Пользователь")
+                    {
+                        <a asp-action="Delete" asp-route-id="@group.ParentMessage.MH_placemant">Delete</a>
+                    }
+                }
             </div>
 
             @if (group.Replies.Any())
@@ -42,8 +49,14 @@
                                 @reply.MH_TheMessage
                             </div>
                             <div class="message-actions">
-                                <a asp-action="Create" asp-route-id="@reply.MH_placemant">Ответить</a> |
-                                <a asp-action="Delete" asp-route-id="@reply.MH_placemant">Delete</a>
+                                @if (ViewContext.HttpContext.Session.GetString("userRole") != null)
+                                {
+                                    <a asp-action="Create" asp-route-id="@reply.MH_placemant">Ответить|</a>
+                                    @if (ViewContext.HttpContext.Session.GetString("userRole") != "Пользователь")
+                                    {
+                                        <a asp-action = "Delete" asp-route-id = "@reply.MH_placemant" > Delete </a>
+                                    }
+                                }
                             </div>
                         </div>
                     }

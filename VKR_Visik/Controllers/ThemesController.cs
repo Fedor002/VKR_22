@@ -51,9 +51,10 @@ namespace VKR_Visik.Controllers
         }
 
         // GET: Themes/Create
-        public IActionResult Create()
+        public async Task<IActionResult> Create()
         {
-            ViewData["sectionsId"] = new SelectList(_context.Sections, "sections_Id", "sections_Id");
+            var listOfSections = await _context.Sections.ToListAsync();
+            ViewData["listOfSections"] = listOfSections;
             return View();
         }
 
@@ -62,17 +63,19 @@ namespace VKR_Visik.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("themes_id,themes_name,themes_data,sectionsId")] Themes themes)
+        public async Task<IActionResult> Create([Bind("themes_name,sectionsId")] Themes themes)
         {
             if (ModelState.IsValid)
             {
+                themes.themes_data = DateTime.Now; // Устанавливаем текущую дату
                 _context.Add(themes);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["sectionsId"] = new SelectList(_context.Sections, "sections_Id", "sections_Id", themes.sectionsId);
+            ViewData["sectionsId"] = new SelectList(_context.Sections, "sections_Id", "sections_name", themes.themes_id);
             return View(themes);
         }
+
 
         // GET: Themes/Edit/5
         public async Task<IActionResult> Edit(int? id)

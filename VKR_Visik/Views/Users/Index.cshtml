@@ -1,0 +1,33 @@
+﻿@model VKR_Visik.Classes.Users
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Авторизация</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Index">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="users_FIO" class="control-label">ФИО</label>
+                <input asp-for="users_FIO" class="form-control" />
+                <span asp-validation-for="users_FIO" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="users_Password" class="control-label">Пароль</label>
+                <input asp-for="users_Password" class="form-control" />
+                <span asp-validation-for="users_Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Войти" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

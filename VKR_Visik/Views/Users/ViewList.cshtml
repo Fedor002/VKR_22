@@ -1,0 +1,41 @@
+﻿@model IEnumerable<VKR_Visik.Classes.Users>
+
+@{
+    ViewData["Title"] = "View";
+}
+
+<h1>View</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.users_FIO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.users_Password)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.users_FIO)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.users_Password)
+            </td>
+            <td>
+                    <form method="post" asp-action="ViewList" asp-route-id="@item.users_Id">
+                        <button type="submit">Выдать доступ</button>
+                    </form>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

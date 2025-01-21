@@ -8709,11 +8709,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Users\\Anato\\VS\\VKR_Visik\\VKR_Visik\\VKR_Visik.csproj",
+      "projectUniqueName": "D:\\Users\\Anato\\VS\\VKR_22\\VKR_Visik\\VKR_Visik.csproj",
       "projectName": "VKR_Visik",
-      "projectPath": "D:\\Users\\Anato\\VS\\VKR_Visik\\VKR_Visik\\VKR_Visik.csproj",
+      "projectPath": "D:\\Users\\Anato\\VS\\VKR_22\\VKR_Visik\\VKR_Visik.csproj",
       "packagesPath": "C:\\Users\\Anato\\.nuget\\packages\\",
-      "outputPath": "D:\\Users\\Anato\\VS\\VKR_Visik\\VKR_Visik\\obj\\",
+      "outputPath": "D:\\Users\\Anato\\VS\\VKR_22\\VKR_Visik\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Anato\\AppData\\Roaming\\NuGet\\NuGet.Config",

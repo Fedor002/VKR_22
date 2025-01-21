@@ -99,23 +99,26 @@ namespace VKR_Visik.Migrations
 
             modelBuilder.Entity("VKR_Visik.Classes.Users", b =>
                 {
-                    b.Property<int>("users_id")
+                    b.Property<int>("users_Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("users_id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("users_Id"));
 
-                    b.Property<string>("password_u")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int?>("Users_AccountActive")
+                        .HasColumnType("int");
 
                     b.Property<string>("users_FIO")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("ussers_role")
+                    b.Property<string>("users_Password")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("users_id");
+                    b.Property<string>("users_Role")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("users_Id");
 
                     b.ToTable("Users");
                 });

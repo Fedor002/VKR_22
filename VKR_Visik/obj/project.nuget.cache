@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BqiKMP1n7goNULsBgyzu1q0fByEEi+24+rs2ySFIFdU7K/QJVEw8JVyc+N3EKP2d9eSg6n3PqINm4oG+z7bOuw==",
+  "dgSpecHash": "cwcFXnqpmxP0SjgUkJ6fe9RC76iBNEvlb/vB4FitKlWhie4htsjeHgC4iaF7wXHE1gxYShj42FrWS31+NsdNTg==",
   "success": true,
-  "projectFilePath": "D:\\Users\\Anato\\VS\\VKR_Visik\\VKR_Visik\\VKR_Visik.csproj",
+  "projectFilePath": "D:\\Users\\Anato\\VS\\VKR_22\\VKR_Visik\\VKR_Visik.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Anato\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Anato\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

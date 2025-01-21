@@ -1,0 +1,48 @@
+﻿@model VKR_Visik.Classes.Users
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Заявка</h1>
+
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="users_FIO" class="control-label">ФИО</label>
+                <input asp-for="users_FIO" class="form-control" />
+                <span asp-validation-for="users_FIO" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="users_Password" class="control-label">Пароль</label>
+                <input asp-for="users_Password" class="form-control" />
+                <span asp-validation-for="users_Password" class="text-danger"></span>
+            </div>
+@*             <div class="form-group">
+                <label asp-for="users_Role" class="control-label"></label>
+                <input asp-for="users_Role" class="form-control" />
+                <span asp-validation-for="users_Role" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Users_AccountActive" class="control-label"></label>
+                <input asp-for="Users_AccountActive" class="form-control" />
+                <span asp-validation-for="Users_AccountActive" class="text-danger"></span>
+            </div> *@
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

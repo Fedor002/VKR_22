@@ -7,12 +7,14 @@ namespace VKR_Visik.Classes
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int users_id { get; set; }
+        public int users_Id { get; set; }
         public string? users_FIO { get; set; }
         [Required(ErrorMessage = "Wrong password")]
         [DataType(DataType.Password)]
-        public string? password_u { get; set; }
+        public string? users_Password { get; set; }
 
-        public string? ussers_role { get; set; }
+        public string? users_Role { get; set; }
+
+        public int? Users_AccountActive { get; set; }
     }
 }

@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace VKR_Visik.Migrations
 {
     /// <inheritdoc />
-    public partial class InitalCreate : Migration
+    public partial class InitialCreate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -29,15 +29,16 @@ namespace VKR_Visik.Migrations
                 name: "Users",
                 columns: table => new
                 {
-                    users_id = table.Column<int>(type: "int", nullable: false)
+                    users_Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     users_FIO = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    password_u = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ussers_role = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    users_Password = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    users_Role = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Users_AccountActive = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Users", x => x.users_id);
+                    table.PrimaryKey("PK_Users", x => x.users_Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -84,7 +85,7 @@ namespace VKR_Visik.Migrations
                         name: "FK_MessageHistory_Users_MH_who",
                         column: x => x.MH_who,
                         principalTable: "Users",
-                        principalColumn: "users_id");
+                        principalColumn: "users_Id");
                 });
 
             migrationBuilder.CreateIndex(

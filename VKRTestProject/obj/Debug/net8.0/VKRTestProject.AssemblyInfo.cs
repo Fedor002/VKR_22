@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VKRTestProject")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ef16c512f4470987e85eb9a008239caa70a4a3bb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d0095d05f95c5bd7cae60e6cd63a336098019a3e")]
 [assembly: System.Reflection.AssemblyProductAttribute("VKRTestProject")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VKRTestProject")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

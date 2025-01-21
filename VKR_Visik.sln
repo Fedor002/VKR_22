@@ -5,7 +5,7 @@ VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VKR_Visik", "VKR_Visik\VKR_Visik.csproj", "{1D059FF8-92E6-49B1-BE74-3B34DA1B300B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VKRTestProject", "VKRTestProject\VKRTestProject.csproj", "{835F7C5E-95E3-4E07-9C9A-D9585EB08EE4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VKRTestProject", "VKRTestProject\VKRTestProject.csproj", "{835F7C5E-95E3-4E07-9C9A-D9585EB08EE4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -119,7 +119,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -131,42 +131,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Users\\Anato\\VS\\VKR_22\\VKR_Visik\\Views\\Sections\\Index.cshtml",
-              "RelativeDocumentMoniker": "VKR_Visik\\Views\\Sections\\Index.cshtml",
-              "ToolTip": "D:\\Users\\Anato\\VS\\VKR_22\\VKR_Visik\\Views\\Sections\\Index.cshtml",
-              "RelativeToolTip": "VKR_Visik\\Views\\Sections\\Index.cshtml",
-              "ViewState": "AQIAABgAAAAAAAAAAAAAACMAAACQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-21T08:03:36.94Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Users\\Anato\\VS\\VKR_22\\VKR_Visik\\Views\\MessageHistories\\Index.cshtml",
-              "RelativeDocumentMoniker": "VKR_Visik\\Views\\MessageHistories\\Index.cshtml",
-              "ToolTip": "D:\\Users\\Anato\\VS\\VKR_22\\VKR_Visik\\Views\\MessageHistories\\Index.cshtml",
-              "RelativeToolTip": "VKR_Visik\\Views\\MessageHistories\\Index.cshtml",
-              "ViewState": "AQIAACcAAAAAAAAAAAAAADYAAABwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-21T08:03:33.259Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "dbo.Users [\u0414\u0430\u043D\u043D\u044B\u0435]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/ANOTO_MSSQLSERVER01/master/True/SqlTable/dbo.Users.sql",
-              "ToolTip": "dbo.Users [\u0414\u0430\u043D\u043D\u044B\u0435]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-01-21T15:42:28.748Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
               "Title": "UserList.cshtml",
               "DocumentMoniker": "D:\\Users\\Anato\\VS\\VKR_22\\VKR_Visik\\Views\\Users\\UserList.cshtml",
@@ -175,8 +139,7 @@
               "RelativeToolTip": "VKR_Visik\\Views\\Users\\UserList.cshtml",
               "ViewState": "AQIAABIAAAAAAAAAAAAAwCgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-21T15:44:06.833Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-21T15:44:06.833Z"
             },
             {
               "$type": "Document",
@@ -188,8 +151,7 @@
               "RelativeToolTip": "VKR_Visik\\Controllers\\UsersController.cs",
               "ViewState": "AQIAAJgAAAAAAAAAAAAqwMIAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T07:48:09.139Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-21T07:48:09.139Z"
             },
             {
               "$type": "Document",
@@ -199,7 +161,7 @@
               "RelativeDocumentMoniker": "VKR_Visik\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "D:\\Users\\Anato\\VS\\VKR_22\\VKR_Visik\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "VKR_Visik\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAAwBUAAAAYAAAA",
+              "ViewState": "AQIAABAAAAAAAAAAAAAAwBUAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-01-21T15:52:45.014Z",
               "EditorCaption": ""
@@ -214,8 +176,35 @@
               "RelativeToolTip": "VKR_Visik\\Views\\Users\\ViewList.cshtml",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAABgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-21T14:28:33.333Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-21T14:28:33.333Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Users\\Anato\\VS\\VKR_22\\VKR_Visik\\Views\\MessageHistories\\Index.cshtml",
+              "RelativeDocumentMoniker": "VKR_Visik\\Views\\MessageHistories\\Index.cshtml",
+              "ToolTip": "D:\\Users\\Anato\\VS\\VKR_22\\VKR_Visik\\Views\\MessageHistories\\Index.cshtml",
+              "RelativeToolTip": "VKR_Visik\\Views\\MessageHistories\\Index.cshtml",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAADYAAABwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-21T08:03:33.259Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Users\\Anato\\VS\\VKR_22\\VKR_Visik\\Views\\Sections\\Index.cshtml",
+              "RelativeDocumentMoniker": "VKR_Visik\\Views\\Sections\\Index.cshtml",
+              "ToolTip": "D:\\Users\\Anato\\VS\\VKR_22\\VKR_Visik\\Views\\Sections\\Index.cshtml",
+              "RelativeToolTip": "VKR_Visik\\Views\\Sections\\Index.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAACMAAACQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-21T08:03:36.94Z"
             },
             {
               "$type": "Document",
@@ -227,8 +216,7 @@
               "RelativeToolTip": "VKR_Visik\\Views\\Themes\\Index.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-21T08:10:19.252Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-21T08:10:19.252Z"
             },
             {
               "$type": "Document",
@@ -240,8 +228,7 @@
               "RelativeToolTip": "VKR_Visik\\Views\\_ViewImports.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-21T15:49:39.577Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-21T15:49:39.577Z"
             },
             {
               "$type": "Document",
@@ -253,8 +240,7 @@
               "RelativeToolTip": "VKR_Visik\\Controllers\\ThemesController.cs",
               "ViewState": "AQIAAD0AAAAAAAAAAAAAwDoAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T07:50:05.89Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-21T07:50:05.89Z"
             },
             {
               "$type": "Document",
@@ -266,8 +252,7 @@
               "RelativeToolTip": "VKR_Visik\\Views\\Themes\\Create.cshtml",
               "ViewState": "AQIAAAwAAAAAAAAAAAAAABkAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-21T14:39:35.032Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-21T14:39:35.032Z"
             },
             {
               "$type": "Document",
@@ -279,8 +264,7 @@
               "RelativeToolTip": "VKR_Visik\\Controllers\\SectionsController.cs",
               "ViewState": "AQIAAD8AAAAAAAAAAAAowDwAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T07:53:49.677Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-21T07:53:49.677Z"
             },
             {
               "$type": "Document",
@@ -292,8 +276,7 @@
               "RelativeToolTip": "VKR_Visik\\Views\\Sections\\Create.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-21T15:02:03.284Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-21T15:02:03.284Z"
             },
             {
               "$type": "Document",
@@ -305,8 +288,7 @@
               "RelativeToolTip": "VKR_Visik\\Views\\Users\\Index.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-21T08:04:49.083Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-21T08:04:49.083Z"
             },
             {
               "$type": "Document",
@@ -318,8 +300,7 @@
               "RelativeToolTip": "VKR_Visik\\Controllers\\MessageHistoriesController.cs",
               "ViewState": "AQIAAE4AAAAAAAAAAAAowCQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T08:00:55.944Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-21T08:00:55.944Z"
             },
             {
               "$type": "Document",
@@ -331,8 +312,7 @@
               "RelativeToolTip": "VKR_Visik\\Classes\\Users.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAAoAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T10:09:24.727Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-21T10:09:24.727Z"
             },
             {
               "$type": "Document",
@@ -344,8 +324,7 @@
               "RelativeToolTip": "VKR_Visik\\Views\\Users\\Create.cshtml",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-21T14:29:20.544Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-21T14:29:20.544Z"
             },
             {
               "$type": "Document",
@@ -358,15 +337,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-01-21T14:24:56.778Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "dbo.MessageHistory [\u0414\u0430\u043D\u043D\u044B\u0435]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/ANOTO_MSSQLSERVER01/master/True/SqlTable/dbo.MessageHistory.sql",
-              "ToolTip": "dbo.MessageHistory [\u0414\u0430\u043D\u043D\u044B\u0435]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-01-21T09:18:07.182Z"
             },
             {
               "$type": "Document",
@@ -454,15 +424,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "dbo.Themes [\u0414\u0430\u043D\u043D\u044B\u0435]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/ANOTO_MSSQLSERVER01/master/True/SqlTable/dbo.Themes.sql",
-              "ToolTip": "dbo.Themes [\u0414\u0430\u043D\u043D\u044B\u0435]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-01-21T09:34:59.749Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 27,
               "Title": "20250121090354_IntialCreate.cs",
               "DocumentMoniker": "D:\\Users\\Anato\\VS\\VKR_22\\VKR_Visik\\Migrations\\20250121090354_IntialCreate.cs",
@@ -472,6 +433,33 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-21T09:03:54.791Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "dbo.Users [\u0414\u0430\u043D\u043D\u044B\u0435]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/ANOTO_MSSQLSERVER01/master/True/SqlTable/dbo.Users.sql",
+              "ToolTip": "dbo.Users [\u0414\u0430\u043D\u043D\u044B\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-01-21T15:42:28.748Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "dbo.MessageHistory [\u0414\u0430\u043D\u043D\u044B\u0435]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/ANOTO_MSSQLSERVER01/master/True/SqlTable/dbo.MessageHistory.sql",
+              "ToolTip": "dbo.MessageHistory [\u0414\u0430\u043D\u043D\u044B\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-01-21T09:18:07.182Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "dbo.Themes [\u0414\u0430\u043D\u043D\u044B\u0435]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/ANOTO_MSSQLSERVER01/master/True/SqlTable/dbo.Themes.sql",
+              "ToolTip": "dbo.Themes [\u0414\u0430\u043D\u043D\u044B\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-01-21T09:34:59.749Z"
             }
           ]
         }
